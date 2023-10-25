@@ -1,0 +1,49 @@
+method: random
+metric:
+  goal: maximize
+  name: best_validation_log_probs
+name: npe_two_moons
+parameters:
+  density_estimator:
+    values:
+      - maf
+  num_transforms:
+    distribution: int_uniform
+    max: 8
+    min: 3
+  num_bins:
+    values:
+      - None
+  tail_bound:
+    values:
+      - None
+  hidden_features:
+    distribution: q_log_uniform_values
+    max: 256
+    min: 32
+    q: 32
+  num_blocks:
+    distribution: int_uniform
+    max: 4
+    min: 2
+  dropout_probability:
+    distribution: q_uniform
+    max: 0.2
+    min: 0.0
+    q: 0.1
+  use_batch_norm:
+    values:
+      - 1
+  batch_size:
+    distribution: q_uniform
+    max: 100
+    min: 20
+    q: 5
+  lr:
+    distribution: q_log_uniform_values
+    max: 1e-3
+    min: 1e-5
+    q: 1e-06
+  clip_max_norm:
+    values:
+      - 5.0
