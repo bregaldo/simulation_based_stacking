@@ -1,6 +1,6 @@
 # Stacking for Simulation-Based Inference
 
-Code to reproduce the stacking experiments of the paper *[Simulation based stacking](https://arxiv.org/abs/#####)*.
+Code to reproduce the stacking experiments of the paper *[Simulation based stacking](https://arxiv.org/abs/2310.17009)* (Y. Yao, B. Régaldo-Saint Blancard & J. Domke).
 
 ## Install
 
