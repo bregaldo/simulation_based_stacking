@@ -66,7 +66,7 @@ def main(args):
         prior_dist = pdist.LogNormal(**prior_params).to_event(1)
     else:
         raise NotImplementedError
-    prior_dist = prior_dist.set_default_validate_args(False)
+    prior_dist.set_default_validate_args(False)
 
     print("Task name: ", task.name)
     print("Task display name: ", task.name_display)
